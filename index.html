@@ -1,4 +1,43 @@
-<!DOCTYPE>
-<html>
-<title>测试</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" id="meta">
+	<title>小疯子的博客</title>
+	<link rel="stylesheet" href="assets/css/typo.css">
+	<script src="assets/js/marked.js"></script>
+	<style>
+		body{padding:16px;}
+		img{max-width:100%;}
+	</style>
+</head>
+<body>
+	<div id="content">
+<!-- # 我的第一篇博客
+## 小疯子
+时间: **20170628**
+> 我家门前有两个自行车，一个是ofo，另一个，还是ofo
+
+我今天学会Markdown了。
+
+![](http://www.hongfen.org/uploads/100908/1_100908230043_1.jpg)		 -->
+	</div>
+	<script>
+		var markdown = `
+# 我的第一篇博客
+## 小疯子
+时间: **20170628**
+> 我家门前有两个自行车，一个是ofo，另一个，还是ofo
+
+我今天学会Markdown了。
+
+![](http://www.hongfen.org/uploads/100908/1_100908230043_1.jpg)
+		`;
+		document.getElementById('content').innerHTML = marked(markdown);		
+	</script>
+<!-- 	<script>
+		var content = document.getElementById('content');
+		content.innerHTML = marked(content.innerHTML);
+	</script> -->
+</body>
 </html>
