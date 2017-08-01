@@ -1,0 +1,13 @@
+开发模版：
+［宇曼项目］
+1:完成计划任务新增订单模块的开发
+  GIT​提交记录:9f9854822e755357b21b1ba9a3839038cbac5486​​
+  CodeReview:史海洋
+2:修改bug​无法正常显示订单详情
+   ​GIT​提交记录:9f9854822e755357b21b1ba9a3839038cbac5486​​
+   Bug 号：JIRA5458
+   RootCause：订单查询SQL多了对订单状态的判断
+   Solution：​​取消对定订单状态的判断，获取全部状态的订单
+3:​完成架构设计
+   http://confluence.polyhome.net/pages/viewpage.action?pageId=393321
+
